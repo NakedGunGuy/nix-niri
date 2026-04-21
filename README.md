@@ -54,6 +54,10 @@ sudo nixos-generate-config --show-hardware-config > ~/nixos/nixos/hosts/main/har
 Place a wallpaper image somewhere on the system:
 
 ```bash
+
+  nix-shell -p imagemagick                                                                                                                                                                                                       
+  convert -size 1920x1080 xc:'#000080' ~/.wallpaper.png 
+
 cp /path/to/your/wallpaper.png ~/.wallpaper
 ```
 
